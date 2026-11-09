@@ -2,12 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
 void readFile(FILE *file)    {
     char *line = NULL;
     size_t len = 0;
-o
 
     // loop for read lines from input file
     while (getline(&line, &len, file) != -1) {
