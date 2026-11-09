@@ -18,8 +18,8 @@ void readFile(FILE *file)    {
                 fprintf(stderr, "realloc failed\n");
                 exit(1);
             }
-            line[lineLen] = '\n';
-            line[lineLen + 1] = '\0';
+            line[lineLen] = '\n'; // add new line to the end of the line
+            line[lineLen + 1] = '\0'; // add NULL after the new line
             lineLen++;
         }
 
